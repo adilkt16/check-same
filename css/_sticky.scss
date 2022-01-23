@@ -1,0 +1,93 @@
+$violet-gradient : linear-gradient(to right, #604ed3, #a082fd);
+
+
+#sticky {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #333;
+    color: #fff;
+    padding: 12px 24px;
+    display: none;
+    ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        li {
+            span {
+                color: #1bd18e;
+                font-size: 28px;
+                font-weight: 700;
+                small {
+                    del {
+                        font-size: 20px;
+                        margin-left: 5px;
+                    }
+                }
+            }
+            section.for-footer-flexing {
+                display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    color: #fff;
+                    p {
+                    margin-right: 5px;
+                    color: #fff;
+                }
+                div.a-button-sticky {
+                    display: flex;
+                    span {
+                        color: #fff;
+                        font-size: 14px;
+                    }
+                    span.digits-here {
+    
+                    }
+                    span.colon-bottom {
+    
+                    }
+                }
+            }
+        }
+        li {
+            a {
+                background: $violet-gradient;
+                    box-shadow: inset 1px 1px 4px 6px #8574eb, inset -4px 0 4px 0 #4734ba;
+                    // padding: 16px 22px;
+                    padding: 10px 30px;
+                    // border-radius: 20px;
+                    border-radius: 10px;
+                    display: block;
+                    text-align: center;
+                span {
+                    color: #fff;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+@media (max-width:768px){
+    #sticky {
+        display:unset;
+    }
+}
+
+@media (max-width:500px){
+    #sticky ul li span {
+        font-size: 24px;
+    }
+    #sticky {
+        padding: 8px 12px;
+    }
+    #sticky ul li a {
+        padding: 8px 20px;
+    }
+    #sticky ul li a span {
+        font-size: 14px;
+    }
+}

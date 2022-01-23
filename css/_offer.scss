@@ -1,0 +1,268 @@
+
+//line height is present , it is unsetted in 400px
+
+$wrapper :944px;
+$violet : #604ed3;
+$violet-gradient : linear-gradient(to right, #604ed3, #a082fd);
+$border-gradient : linear-gradient(to right, #a082fd, #604ed3);
+
+
+
+#offers {
+    padding: 50px 0;
+	background-color: #f8f5ff;
+    section.wrapper {
+        max-width: $wrapper;
+        h2 {
+            font-weight: 600;
+            font-size: 38px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        section.common-flex {
+            display: flex;
+            section.first-offer  {
+                width: 48%;
+                background: #fff;
+                padding: 40px 22px 22px;
+                border-radius: 30px;
+                margin-right: 40px;
+                h3 {
+                    font-size: 34px;
+	                font-weight: 600;
+                }
+                p.notrupees {
+                    font-size: 28px;
+                    margin-top: 30px;
+                    padding-bottom: 20px;
+                    border-bottom: 0.5px solid rgba(0,0,0,.2);
+                    margin-bottom: 30px;
+                    span {
+                        font-size: 60px;
+                        color: $violet;
+                        font-weight: 600;
+                        small {
+                            del {
+
+                            }
+                        }
+                    }
+                }
+                ul {
+                    display: flex;
+                    justify-content:space-between;
+                    margin-bottom: 1px;
+                    li {
+                        width: auto;
+                        div.tick-img {
+                            width: 20px;
+                            height: 15px;
+                            margin-top: 10px;
+                            margin-right: 15px;
+                            display: block;
+                            img {
+                                width: 100%;
+                                display: block;
+                                height: 100%;
+                            }
+                        }
+                        p {
+                            font-size:16px;
+                            color: #333;
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+                p {
+                    margin-bottom: 20px;
+                    padding-right: 11px;
+                    padding-left: 11px;
+                    color: #8a8a8a;
+                    font-size: 15px;
+                    line-height: 24px; 
+                    //line height unsetting in 400px; 
+                }
+                a {
+                    /* background-image: linear-gradient(91deg,#604ed3,#a082fd); */
+                    background: $violet-gradient;
+                    box-shadow: inset 1px 1px 4px 6px #8574eb, inset -4px 0 4px 0 #4734ba;
+                    padding: 26px 42px;
+                    border-radius: 20px;
+                    display: block;
+                    text-align: center;
+                    span {
+                        font-size: 16px;
+                        color: #fff;
+                        font-weight: 600;
+                    }
+                }
+            }
+            section.second-offer {
+                width: 48%;
+	            padding: 40px 22px 22px;
+                h5 {
+                    color: $violet;
+                    font-size: 28px;
+                    font-weight: 600;
+                    margin-bottom: 20px;
+                }
+                ul {
+                    display: flex;
+                    li {
+                        div.tick-two {
+                            display: block;
+                            width: 30px;
+                            height: auto;
+                            margin-right: 10px;
+                            margin-bottom: 20px;
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                display: block;
+                            }
+                        }
+                        p {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (max-width:860px){
+    #offers section.wrapper section.common-flex section.first-offer h3 {
+        font-size: 30px;
+    }
+    #offers section.wrapper section.common-flex section.first-offer p.notrupees span {
+        font-size: 50px;
+    }
+}
+
+@media (max-width:768px){
+    #offers section.wrapper section.common-flex {
+        flex-wrap: wrap;
+    }
+    #offers section.wrapper section.common-flex section.first-offer {
+        width: 98%;
+        margin-right: 0px;
+    }
+    #offers section.wrapper section.common-flex section.second-offer {
+        width: 98%;
+        display: flex;
+    }
+    #offers section.wrapper section.common-flex section.second-offer  div.twos-common {
+        width: 48%;
+    }
+    #offers section.wrapper section.common-flex section.second-offer div.second-inside-twos {
+        margin-right: 20px;
+    }
+    #offers section.wrapper h2 {
+        font-size: 34px;
+    }
+    #offers section.wrapper section.common-flex section.first-offer p.notrupees {
+        margin-bottom: 15px;
+    }
+    #offers section.wrapper section.common-flex section.first-offer ul {
+        justify-content: unset;
+    }    
+    
+}
+
+@media (max-width:640px){
+    #offers section.wrapper section.common-flex section.first-offer h3 {
+        font-size: 26px;
+    }
+    #offers section.wrapper section.common-flex section.first-offer p.notrupees span {
+        font-size: 40px;
+    }
+    #offers section.wrapper section.common-flex section.first-offer p.notrupees {
+        font-size: 24px;
+        margin-top: 15px;
+        padding-bottom: 10px;
+        margin-bottom: 30px;
+    }
+    #offers section.wrapper section.common-flex section.second-offer h5 {
+        font-size: 22px;
+    }
+    #offers section.wrapper section.common-flex section.second-offer ul {
+        align-items: flex-start;
+    }
+}
+@media (max-width:540px){
+    #offers section.wrapper section.common-flex section.second-offer h5 {
+        font-size: 20px;
+    }
+}
+
+
+@media (max-width:500px){
+    #offers section.wrapper h2 {
+        font-size: 26px;
+    }
+    #offers section.wrapper section.common-flex section.first-offer h3 {
+        font-size: 23px;
+    }
+    #offers section.wrapper section.common-flex section.first-offer p.notrupees span {
+        font-size: 35px;
+    }
+    #offers section.wrapper section.common-flex section.first-offer p.notrupees {
+        font-size: 20px;
+    }
+    #offers section.wrapper section.common-flex section.first-offer ul li p {
+        font-size: 15px;
+    }
+    #offers section.wrapper section.common-flex section.second-offer {
+        flex-wrap: wrap;
+    }
+    #offers section.wrapper section.common-flex section.second-offer div.twos-common {
+        width: 98%;
+    }
+    #offers section.wrapper section.common-flex section.second-offer div.second-inside-twos {
+        margin-right: 0px;
+    }
+    #offers section.wrapper section.common-flex section.second-offer ul li div.tick-two {
+        width: 25px;
+        margin-bottom: 15px;
+    }
+    // #offers section.wrapper section.common-flex section.second-offer div.second-inside-firstos ul  {
+    //     margin-bottom: 10px;
+    // }
+    #offers section.wrapper section.common-flex section.second-offer div.twos-common ul {
+        margin-bottom: 10px;
+    }
+}
+
+
+
+@media (max-width:400px){
+    #offers section.wrapper section.common-flex section.first-offer h3 {
+        font-size: 20px;
+    }
+    #offers section.wrapper section.common-flex section.second-offer h5 {
+        margin-top: 20px;
+    }
+    #offers section.wrapper section.common-flex section.first-offer ul li p {
+        font-size: 14px;
+    }
+    #offers section.wrapper section.common-flex section.first-offer p {
+        font-size: 14px;
+        line-height: unset;
+    }
+    #offers section.wrapper section.common-flex section.first-offer a {
+        padding: 20px 42px;
+    }
+}
+
+
+
+
+
+
+
+
+
+

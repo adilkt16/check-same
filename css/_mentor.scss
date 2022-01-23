@@ -1,0 +1,198 @@
+
+//letter spacing in the areas of 660px , 600px,400px 
+
+$violet : #604ed3;
+
+#mentor {
+    background: url(../images/mentorbg.png)  ;
+    background-repeat: no-repeat;
+    background-size: auto;
+    color: #fff;
+	padding-bottom: 60px;
+    background-position: 100% 0;
+    section.wrapper {
+        max-width: 944px;
+        span {
+            background: linear-gradient(91deg,rgba(96,78,211,.4),rgba(160,130,253,.4));
+            padding: 14px 60px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            margin-bottom: 100px;
+            display: inline-block;
+        }
+        div.avatar {
+            display: flex;
+            align-items: center;
+            div.img-mentor {
+                display: block;
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                margin-right: 20px;
+                img {
+                    width: 100%;
+                    display: block;
+                    height: 100%;
+                }
+            }
+            div.detail-mentor {
+                h3 {
+                    font-size:28px;
+                        font-weight: 600;
+                        color: $violet;
+                        /* color: var(--violetgradient); */
+                }
+                p {
+                    opacity: 0.8;
+                }
+            }
+        }
+        ul {
+                display: flex;
+                justify-content:space-between;
+                align-items: center;
+                margin-bottom: 20px;
+            li {
+                width: 48%;
+            }
+            li.para {
+                p {
+
+                }
+                p.one-paragraph {
+                    margin: 20px 0 ;
+                }
+                p.two-paragraph {
+
+                }
+            }
+            li.companies-img {
+                text-align: center;
+                display: block;
+                width:auto;
+                margin:0 auto;
+                border: 1px dashed #9478f5;;
+                padding: 20px 50px;
+                border-radius: 10px;
+                h4 {
+                    font-size: 24px;
+                    font-weight: 600;
+                    text-align: center;
+                    margin-bottom: 20px;
+                }
+                div {
+                    width: 160px;
+                    margin: 0 auto;
+                    height: auto;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        display: block;
+                        margin-bottom: 10px;
+                        &:last-child {
+                            margin-bottom: 0px;
+                        }
+                    }
+                }
+            }
+        }
+        p {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+
+@media (max-width:860px){
+    #mentor section.wrapper ul li.companies-img {
+        padding: 20px 30px;
+    }
+    #mentor section.wrapper ul li.companies-img div {
+        width: 130px;
+    }
+}
+
+@media (max-width:768px){
+    #mentor section.wrapper span {
+        margin-bottom: 50px;
+        font-size:15px;
+    }
+    #mentor section.wrapper div.avatar div.img-mentor {
+        width: 120px;
+        height: 120px;
+    }
+    #mentor section.wrapper div.avatar div.detail-mentor h3 {
+        font-size: 22px;
+    }
+    div.avatar div.detail-mentor  p.ex-company{
+        font-size: 16px;
+    }
+    #mentor section.wrapper ul li {
+        margin-right: 15px;
+    }
+    #mentor section.wrapper ul li.companies-img h4 {
+        font-size: 19px;
+    }
+}
+
+@media (max-width:660px){
+    #mentor p {  
+        font-size: 15px;
+        letter-spacing: 0.1px;
+    }
+    #mentor {
+        // background-position: 100%;
+    }
+    #mentor {
+        background: url(../images/mentorbg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #fff;
+        padding-bottom: 60px;
+        background-position: unset ;
+    }
+    #mentor {
+        padding-bottom: 30px;
+    }
+    #mentor section.wrapper ul li.companies-img {
+        padding: 15px 10px;
+    }
+    #mentor section.wrapper div.avatar div.img-mentor {
+        width: 100px;
+        height: 100px;
+    }
+}
+@media (max-width:600px){
+    #mentor p {
+        font-size: 14px;
+    }
+    #mentor section.wrapper ul li {
+        width: 98%;
+    }
+    #mentor section.wrapper ul {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width:500px){
+    #mentor section.wrapper span {
+        font-size: 15px;
+        display: block;
+        width: fit-content;
+        margin: 0 auto 40px;
+    }
+}
+
+@media (max-width:400px){
+    #mentor section.wrapper div.avatar div.img-mentor {
+        width: 80px;
+        height: 80px;
+    }
+    #mentor section.wrapper div.avatar div.detail-mentor h3 {
+        font-size: 18px;
+    }
+    #mentor p {
+    letter-spacing: 0px;
+    }
+}
+

@@ -1,0 +1,218 @@
+
+$violet : #604ed3;
+$violet-gradient : linear-gradient(to right, #604ed3, #a082fd);
+$border-gradient : linear-gradient(to right, #a082fd, #604ed3);
+
+
+#timer-portion {
+    background-color: #f8f5ff;
+    padding: 80px 0;
+    section.wrapper {
+        h2 {
+            font-size: 36px;
+            font-weight: 600;
+            color:#333;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        div.js-clock {
+            border: 2px dashed #A082FD;
+            padding: 50px;
+            border-radius: 10px;
+            color: $violet;
+            div.for-flexing {
+                display: flex;
+            align-items: center;
+            margin: 0 200px;
+            }
+            div.timer_clock-box {
+                // display: flex;
+                text-align: center;
+                margin:0 auto;
+                #day-number {
+
+                }
+                #hour-number {
+
+                }
+                #minute-number {
+
+                }
+                #second-number {
+
+                }
+                div.timer-clock-number {
+                    font-size: 66px;
+                    font-weight: 700;
+                }
+                div.timer-clock-label {
+                    font-size:22px;
+                    color: #333;
+                    margin-top: 0px;
+                }
+            }
+            div.semi-colon {
+                font-size:56px;
+                // margin-bottom: 30px;
+                margin: 0 20px 30px;
+            }
+        }
+        div.bottom-part {
+            a {
+                /* background-image: linear-gradient(91deg,#604ed3,#a082fd); */
+                background: $violet-gradient;
+                box-shadow: inset 1px 1px 4px 6px #8574eb, inset -4px 0 4px 0 #4734ba;
+                padding: 26px 42px;
+                border-radius: 20px;
+                display: block;
+                text-align: center;
+                margin: 60px 80px 30px;
+                span {
+                    font-size: 28px;
+                    color: #fff;
+                    font-weight: 600;
+                    del {
+                        font-size: 16px;
+                    }
+                }
+                p {
+                    font-size:  14px;
+                    color: #fff;
+                }
+            }
+            p {
+                font-size: 16px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+
+
+
+
+// common button
+
+@media (max-width:990px){
+    #timer-portion section.wrapper div.bottom-part a span {
+        font-size: 24px;
+    }
+    #timer-portion section.wrapper div.bottom-part a {
+        padding: 26px 32px;
+    }
+}
+// common button ended
+
+
+@media (max-width:980px){
+    #timer-portion section.wrapper div.js-clock div.timer_clock-box div.timer-clock-number {
+        font-size: 60px;
+    }
+    #timer-portion section.wrapper div.js-clock div.for-flexing {
+        margin: 0 100px;
+    }
+}
+
+
+@media (max-width:880px){
+
+    #timer-portion section.wrapper div.bottom-part a span {
+        font-size: 22px;
+    }
+    #timer-portion section.wrapper div.bottom-part a {
+        margin: 40px 50px 60px;
+    }
+}    
+// common button ends
+
+
+@media (max-width:768px){
+    //common button
+    #timer-portion section.wrapper div.bottom-part a {
+        display: none;
+    } 
+    //common button ended
+    #timer-portion section.wrapper div.js-clock div.for-flexing {
+        margin: 0 50px;
+    }
+    #timer-portion section.wrapper div.js-clock {
+        padding: 40px 50px;
+        margin-bottom: 40px;
+    }
+    #timer-portion section.wrapper div.js-clock div.timer_clock-box div.timer-clock-number {
+        font-size: 55px;
+    }
+    #timer-portion section.wrapper h2 {
+        font-size: 30px;
+    }
+    #timer-portion {
+        padding: 50px 0;
+    }
+    #timer-portion section.wrapper div.bottom-part p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width:640px){
+    #timer-portion section.wrapper div.js-clock div.timer_clock-box div.timer-clock-number {
+        font-size: 50px;
+    }
+    #timer-portion section.wrapper div.js-clock div.timer_clock-box div.timer-clock-label {
+        font-size: 19px;
+    }
+    #timer-portion section.wrapper div.js-clock div.semi-colon {
+        margin: 0 0px 30px;
+    }
+    #timer-portion section.wrapper div.js-clock {
+        padding: 30px 30px;
+    }
+    #timer-portion section.wrapper h2 {
+        font-size: 25px;
+    }
+}
+
+@media (max-width:500px){
+    #timer-portion section.wrapper div.js-clock div.for-flexing {
+        margin: 0;
+    }
+    #timer-portion section.wrapper div.js-clock div.timer_clock-box div.timer-clock-number {
+        font-size: 45px;
+    }
+    #timer-portion section.wrapper div.js-clock div.timer_clock-box div.timer-clock-label {
+        font-size: 17px;
+    }
+    #timer-portion section.wrapper h2 {
+        font-size: 26px;
+    }
+    #timer-portion section.wrapper div.js-clock {
+        padding: 20px 30px;
+    }
+    #timer-portion section.wrapper div.bottom-part p {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+}
+@media (max-width:400px){
+    #timer-portion section.wrapper div.js-clock div.timer_clock-box div.timer-clock-number {
+        font-size: 35px;
+    }
+    #timer-portion section.wrapper div.js-clock div.semi-colon {
+        font-size: 40px;
+        margin: 0 5px 30px;
+    }
+    #timer-portion section.wrapper h2 {
+        font-size: 24px;
+    }
+    #timer-portion {
+        padding: 30px 0;
+    }
+    #timer-portion section.wrapper div.bottom-part p {
+        font-size: 13px;
+    }
+    #timer-portion section.wrapper div.js-clock {
+        margin-bottom: 25px;
+    }
+    
+    
+}

@@ -1,0 +1,158 @@
+$wrapper :944px;
+$violet : #604ed3;
+$violet-gradient : linear-gradient(to right, #604ed3, #a082fd);
+$border-gradient : linear-gradient(to right, #a082fd, #604ed3);
+#certificate {
+                padding-top: 50px;
+                padding-bottom: 100px;
+                background-color: #f8f5ff;
+    section.wrapper {
+        max-width: $wrapper;
+        div.middle-content {
+            text-align: center;
+            h2 {
+                color: $violet;
+                font-weight: 600;
+                font-size: 38px;
+                margin-bottom:10px;
+            }
+            p {
+                font-size:20px;
+	            font-weight: 500;
+                span {
+                    color: $violet;
+                }
+            }
+        }
+        section.bothcer {
+            display: flex;
+            justify-content:space-between;
+            margin-top: 40px;
+            div.left-part {
+                width: 48%;
+                section {
+                    margin-bottom: 25px;
+                    ul {
+                        display: flex;
+	                    justify-content:space-between;
+                        li {
+                            width: auto;
+	                        margin-right: 20px;
+                            div.onlyimg {
+                                width: 50px;
+                                height: auto;
+                                display: block;
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                    display: block;
+                                }
+                            }
+                            h5 {
+                                color: $violet;
+                                margin-bottom: 5px;
+                                font-size: 22px;
+                                font-weight: 500;
+                            }
+                            p {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+            div.right-part {
+                width: 48%;
+                div.certificateimage {
+                    display: block;
+                    width: 500px;
+                    height: auto;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+@media (max-width:1200px){
+    #certificate section.wrapper section.bothcer div.right-part div.certificateimage {
+        width: 450px;
+    }
+}
+@media (max-width:990px){
+    #certificate {
+        padding-bottom: 50px;
+    }
+    #certificate section.wrapper {
+        max-width: unset;
+    }
+    #certificate section.wrapper section.bothcer {
+        flex-wrap:wrap;
+    }
+    #certificate section.wrapper section.bothcer div.left-part {
+        width: 98%;
+        order: 2;
+    }
+    #certificate section.wrapper section.bothcer div.right-part {
+        width: 98%;
+        order: 1;
+        margin-bottom: 30px;
+    }
+    #certificate section.wrapper section.bothcer div.right-part div.certificateimage {
+        width: 600px;
+        display: block;
+        margin: 0 auto;
+    }
+    #certificate section.wrapper section.bothcer div.left-part section ul {
+        // padding: 10px;
+        align-items: center;
+    }    
+}
+
+@media (max-width:768px){
+    #certificate section.wrapper div.middle-content p {
+        font-size: 16px;
+    }
+    #certificate section.wrapper section.bothcer div.right-part div.certificateimage {
+        width: 450px;
+    }
+}
+@media (max-width:500px){
+    #certificate {
+        padding-bottom: 10px;
+    }
+    #certificate section.wrapper section.bothcer div.left-part section ul {
+        align-items: flex-start;
+    }
+    #certificate section.wrapper div.middle-content h2 {
+        font-size:26px;
+    }
+    #certificate section.wrapper div.middle-content p {
+        font-size: 14px;
+    }
+    #certificate section.wrapper section.bothcer div.right-part div.certificateimage {
+        width: auto;
+        display: block;
+        margin: 0 auto;
+    }
+    #certificate section.wrapper section.bothcer {
+        margin-top: 20px;
+    }
+    #certificate section.wrapper section.bothcer div.left-part section ul li div.onlyimg {
+        width: 40px;
+    }
+    #certificate section.wrapper section.bothcer div.left-part section ul li h5 {
+        font-size: 18px;
+    }
+    #certificate section.wrapper section.bothcer div.left-part section ul li p {
+        font-size: 13px;
+    }
+}
+
